@@ -39,8 +39,29 @@
 
     <script src = "pixel.js"></script>
 
+        
+
+<svg 
+viewBox="0 0 200 200"
+xmlns='http://www.w3.org/2000/svg'>
+
+<filter id='noiseFilter'>
+  <feTurbulence 
+    type='fractalNoise' 
+    baseFrequency='100.0' 
+    numOctaves='3' 
+    stitchTiles='stitch' />
+</filter>
+
+<rect
+  width='100%' 
+  height='100%' 
+  filter='url(#noiseFilter)' />
+</svg>
+
     <div class = "footer">
-        <p>footer</p>
+        <a href="https://www.theodinproject.com">The Odin Project</a>
+        <a href = "https://github.com/Tofuwave">GitHub</a>
     </div>
     
 </body>
